@@ -3,7 +3,7 @@ package acr.browser.lightning.test;
 import com.robotium.solo.*;
 import android.test.ActivityInstrumentationTestCase2;
 
-//This is for open tab testing
+
 @SuppressWarnings("rawtypes")
 public class test01 extends ActivityInstrumentationTestCase2 {
   	private Solo solo;

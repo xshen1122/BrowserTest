@@ -41,8 +41,5 @@ public class test02 extends ActivityInstrumentationTestCase2 {
         solo.waitForActivity("MainActivity", 2000);
         //Click on LinearLayout
         solo.clickOnMenuItem("New Tab");
-        solo.typeText(0, "m.newsmth.net \n");
-        solo.sleep(3000);
-
     }
 }
