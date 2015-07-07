@@ -8,7 +8,7 @@ import android.test.ActivityInstrumentationTestCase2;
 public class test02 extends ActivityInstrumentationTestCase2 {
     private Solo solo;
 
-    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "acr.browser.lightning.MainActivity";
+    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "acr.browser.lightning.activity.MainActivity";
 
     private static Class<?> launcherActivityClass;
     static{
@@ -41,5 +41,8 @@ public class test02 extends ActivityInstrumentationTestCase2 {
         solo.waitForActivity("MainActivity", 2000);
         //Click on LinearLayout
         solo.clickOnMenuItem("New Tab");
+        solo.typeText(0, "m.newsmth.net \n");
+        solo.sleep(3000);
+
     }
 }

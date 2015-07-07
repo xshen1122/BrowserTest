@@ -19,7 +19,8 @@ repositories {
 }
 
 dependencies {
-    androidTestCompile fileTree(dir: 'libs', include: 'robotium-solo-5.4.1.jar')
+    androidTestCompile fileTree(include: 'robotium-solo-5.4.1.jar', dir: 'libs')
+    compile files('libs/spoon-runner-1.1.9-jar-with-dependencies.jar')
 }
 
 android {
@@ -54,6 +55,7 @@ task assembleDebug(overwrite: true) {}
 
 task copyTask(type: Copy) {
     from '/home/xueqin/workspace/Lightning-Browser-Plus_debug.apk'
+//    from '/home/xueqin/workspace/app-debug.apk'
     into 'build/outputs/apk/'
     rename {
         'BrowserAppTest-debug.apk'

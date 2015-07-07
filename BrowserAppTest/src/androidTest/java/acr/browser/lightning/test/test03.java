@@ -8,7 +8,7 @@ import android.test.ActivityInstrumentationTestCase2;
 public class test03 extends ActivityInstrumentationTestCase2 {
   	private Solo solo;
   	
-  	private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "acr.browser.lightning.MainActivity";
+  	private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "acr.browser.lightning.activity.MainActivity";
 
     private static Class<?> launcherActivityClass;
     static{
